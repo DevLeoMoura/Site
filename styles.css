@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230622/pngtree-colorful-ink-background-in-3d-wallpaper-image_3655655.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-button {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+}
+.date-display, .social-links {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    color: #fff;    
+}
+.countdown-timer {
+    /* From https://css.glass */
+    background: rgba(6, 57, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    flex: 2;
+    padding: 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.date-display {
+    /* From https://css.glass */
+    background: rgba(6, 57, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+    width: 50px;
+    height: 100px;
+    margin: 0 10px;
+    font-family: "Brush Script MT", sans-serif;
+}
+.social-links {
+    background: rgba(6, 57, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(157, 157, 157, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border: 1px solid rgba(157, 157, 157, 0.45);
+}
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .date-display, .countdown-timer, .social-links {
+        margin: 10px 0;
+    }
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-links a {
+        margin: 5px;
+    }
+}
